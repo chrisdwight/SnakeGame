@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
-
-html, body {
+body {
     background: url("snakebackground.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+	
+}
+
+html, body {
     margin: 10;
     padding: 10;
     font-family: 'VT323', monospace ;
