@@ -3,7 +3,7 @@
 
 html, body {
     background: url("snakebackground.jpg");
-    background-size: 100%;
+    background-size: contain;
     margin: 10;
     padding: 10;
     font-family: 'VT323', monospace ;
