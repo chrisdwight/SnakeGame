@@ -2,9 +2,10 @@
 
 body {
     background: url("snakebackground.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    height: auto;	
 }
 
 html, body {
