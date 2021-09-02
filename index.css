@@ -15,6 +15,7 @@ h1 {
 }
 
 .grid {
+    background: white;	
     display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
