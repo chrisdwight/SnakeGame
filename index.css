@@ -4,7 +4,7 @@
 html, body {
     background: url("snakebackground.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;;
     margin: 10;
     padding: 10;
     font-family: 'VT323', monospace ;
