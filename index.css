@@ -2,11 +2,9 @@
 
 
 html, body {
-    background-image: url("snakebackground.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("snakebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
     margin: 10;
     padding: 10;
     font-family: 'VT323', monospace ;
@@ -19,7 +17,7 @@ h1 {
 }
 
 .grid {
-    background: white;	
+    background-color: white;	
     display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
