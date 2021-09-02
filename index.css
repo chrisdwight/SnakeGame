@@ -2,7 +2,11 @@
 
 
 html, body {
-    background-image: url("snakebackground.jpg");	
+    background-image: url("snakebackground.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin: 10;
     padding: 10;
     font-family: 'VT323', monospace ;
