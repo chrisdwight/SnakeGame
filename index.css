@@ -3,7 +3,6 @@
 
 html, body {
     background: url("snakebackground.jpg");
-    background-repeat: no-repeat;
     background-size: 100%;
     margin: 10;
     padding: 10;
