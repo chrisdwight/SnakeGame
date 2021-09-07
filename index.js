@@ -18,7 +18,7 @@ function createGrid() {
     const square = document.createElement('div')
     //add styling to the element
     square.classList.add('square')
-    //put the element into our grid
+    //put the element into grid
     grid.appendChild(square)
     //push it into a new squares array    
     squares.push(square)
@@ -41,7 +41,7 @@ function startGame() {
     direction = 1
     intervalTime = 1000
     generateApple()
-    //readd the class of snake to our new currentSnake
+    //re add the class of snake to new currentSnake
     currentSnake.forEach(index => squares[index].classList.add('snake'))
     timerId = setInterval(move, intervalTime)
 }
@@ -56,31 +56,31 @@ function move() {
     )
     return clearInterval(timerId)
 
-    //remove last element from our currentSnake array
+    //remove last element from currentSnake array
     const tail = currentSnake.pop()
     //remove styling from last element
     squares[tail].classList.remove('snake')
-    //add square in direction we are heading
+    //add square in direction snake is heading
     currentSnake.unshift(currentSnake[0] + direction)
-    //add styling so we can see it
+    //add styling so it can be seen
     
     //deal with snake head gets apple
     if (squares[currentSnake[0]].classList.contains('apple')) {
         //remove the class of apple
         squares[currentSnake[0]].classList.remove('apple')
-        //grow our snake by adding class of snake to it
+        //grow snake by adding class of snake to it
         squares[tail].classList.add('snake')
         console.log(tail)
-        //grow our snake array
+        //grow snake array
         currentSnake.push(tail)
         console.log(currentSnake)
         //generate new apple
         generateApple()
         //add one to the score
         score++
-        //display our score
+        //display player score
         scoreDisplay.textContent = score
-        //speed up our snake
+        //speed up snake
         clearInterval(timerId)
         console.log(intervalTime)
         intervalTime = intervalTime * speed
